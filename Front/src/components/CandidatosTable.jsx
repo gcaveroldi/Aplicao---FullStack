@@ -1,4 +1,3 @@
-// src/components/CandidatosTable.js
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
 import axios from 'axios';
@@ -21,7 +20,7 @@ const CandidatosTable = () => {
     };
 
     fetchData();
-  }, []); // Adiciona-se o array vazio para garantir que o efeito execute apenas uma vez
+  }, []); 
 
   return (
     <Table striped bordered hover>

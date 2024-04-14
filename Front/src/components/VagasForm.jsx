@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 
-const VagasForm = ({ onAddSuccess }) => { // Adicionamos a prop onAddSuccess
+const VagasForm = ({ onAddSuccess }) => { 
   const [formData, setFormData] = useState({
     codigo: '',
     salario: '',
@@ -21,7 +21,7 @@ const VagasForm = ({ onAddSuccess }) => { // Adicionamos a prop onAddSuccess
         cidade: '',
         quantidade: ''
       });
-      // Chamamos a função onAddSuccess para indicar que a adição foi bem-sucedida
+      
       onAddSuccess();
     } catch (error) {
       console.error('Erro ao adicionar vaga:', error.message);

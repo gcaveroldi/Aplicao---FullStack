@@ -20,7 +20,7 @@ function InscriptionsTable() {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:4000/api/inscricoes/${id}`);
-      fetchInscriptions();  // Atualizar a lista após excluir
+      fetchInscriptions(); 
     } catch (error) {
       console.error('Erro ao deletar inscrição:', error);
     }
@@ -42,7 +42,7 @@ function InscriptionsTable() {
             <td>{inscription.pk_vaga_codigo}</td>
             <td>
               <button onClick={() => handleDelete(inscription.id)}>Excluir</button>
-              <button>Editar</button> {/* Implementar funcionalidade de edição se necessário */}
+              <button>Editar</button> {}
             </td>
           </tr>
         ))}

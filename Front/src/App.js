@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import CandidatosTable from './components/CandidatosTable.jsx';
@@ -13,8 +12,7 @@ function App() {
   const [candidatos, setCandidatos] = useState([]);
   const [vagas, setVagas] = useState([]);
 
-  // Fetching candidatos
-  useEffect(() => {
+   useEffect(() => {
     const fetchCandidatos = async () => {
       try {
         const response = await fetch('http://localhost:4000/api/candidatos');
@@ -30,22 +28,20 @@ function App() {
     fetchCandidatos();
   }, []);
 
-  // Placeholder for fetching vagas
+  
   useEffect(() => {
-    // Função similar para buscar vagas
+    
     const fetchVagas = async () => {
-      // Implement fetch logic here
+      
     };
     fetchVagas();
   }, []);
 
   const handleCandidatoAddSuccess = () => {
-    fetchCandidatos(); // Refresh candidatos after adding new one
+    fetchCandidatos(); 
   };
 
   const handleVagaAddSuccess = () => {
-    // Refresh vagas after adding a new one
-    // fetchVagas(); // Uncomment and implement fetchVagas
   };
 
   return (

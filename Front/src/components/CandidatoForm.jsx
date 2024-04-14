@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 
-const CandidatoForm = ({ onAddSuccess }) => { // Adicionamos a prop onAddSuccess
+const CandidatoForm = ({ onAddSuccess }) => { 
   const [formData, setFormData] = useState({
     nome: '',
     endereco: '',
@@ -19,7 +19,7 @@ const CandidatoForm = ({ onAddSuccess }) => { // Adicionamos a prop onAddSuccess
         endereco: '',
         telefone: ''
       });
-      // Chamamos a função onAddSuccess para indicar que a adição foi bem-sucedida
+      
       onAddSuccess();
     } catch (error) {
       console.error('Erro ao adicionar candidato:', error.message);
