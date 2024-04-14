@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+   /* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para os containers */
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os formulários */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para os botões */
+.table-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table-buttons button {
+    margin-left: 5px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os containers de formulário e tabela */
+.container-form-table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <noscript></noscript>
+    <!-- Div onde o aplicativo React será renderizado -->
+    <div id="root"></div>
+
+    <!-- Inclusão do arquivo bundle.js -->
+    <script src="build/bundle.js"></script>
+</body>
+
+</html>
