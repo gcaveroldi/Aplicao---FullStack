@@ -1,0 +1,2 @@
+Nesta atividade utilizei o método sequelize do JS para para manipular os dados usando objetos e métodos, sem precisar escrever SQL diretamente, uma vez que pode ser utilizado de forma dinâmica o backend.
+Utilizei o método axios, para lidar com a comunicação de dados entre o frontend e o backend em aplicações web. Ele fornece uma API simples e flexível para realizar chamadas de API assíncronas, como obter dados de uma API RESTful, enviar dados para um servidor ou atualizar dados em tempo real.
